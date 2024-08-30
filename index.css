@@ -1,0 +1,157 @@
+/* General Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar Style */
+  .navbar {
+    background-color: #c21f1f; /* Dark background for navbar */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect for navbar */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .navbar:hover {
+    background-color: #212529; /* Darker background on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* More intense shadow on hover */
+  }
+  
+  .navbar-brand img {
+    height: 40px; /* Adjust the height of the logo */
+    transition: transform 0.3s ease; /* Smooth transition for logo scaling */
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1); /* Slightly scale up the logo on hover */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff !important; /* White text color for nav links */
+    font-weight: bold; /* Make nav links bold */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and text shadow */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff2222 !important; /* Change color on hover */
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Add text shadow on hover */
+  }
+  
+  /* Search Form Style */
+  #search input.form-control {
+    border-radius: 20px; /* Rounded corners for the search input */
+    border: 1px solid #ced4da; /* Light border for the search input */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+  }
+  
+  #search input.form-control:focus {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2); /* Add shadow on focus */
+    border-color: #28a745; /* Green border color on focus */
+  }
+  
+  #search button {
+    border-radius: 20px; /* Match button with the rounded corners of the input */
+    background-color: #28a745; /* Green background color */
+    color: #ffffff; /* White text color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background and transform */
+  }
+  
+  #search button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+  }
+  
+  /* Section Title */
+  section#Profesores h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #343a40;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  section#Profesores h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    background: #ff5722; /* Accent color for underline */
+    border-radius: 2px;
+    transition: width 0.3s ease; /* Smooth transition for underline width */
+  }
+  
+  section#Profesores h2:hover::after {
+    width: 100px; /* Expand underline on hover */
+  }
+  
+  /* Card Styles */
+  .card-body p1 {
+    display: block;
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 0;
+    padding: 0.5rem;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  
+  .card-body p1:hover {
+    color: #ff5722; /* Change color on hover */
+  }
+  
+  /* Card Image Styles */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and shadow */
+  }
+  
+  .image-container:hover {
+    transform: scale(1.05); /* Slightly scale up the image container on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* More intense shadow on hover */
+  }
+  
+  /* Carousel Style */
+  #carouselExampleControls .carousel-item img {
+    border-radius: 10px; /* Rounded corners for carousel images */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+  }
+  
+  #carouselExampleControls .carousel-item:hover img {
+    transform: scale(1.03); /* Slightly scale up carousel images on hover */
+  }
+  
+  /* Footer Style */
+  #footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text color */
+    padding: 2rem 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2); /* Shadow effect for footer */
+  }
+  
+  #footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and text shadow */
+  }
+  
+  #footer a:hover {
+    color: #ff5722; /* Change color on hover */
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Add text shadow on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .navbar-brand img {
+      height: 30px; /* Smaller logo on small screens */
+    }
+  }
+  
